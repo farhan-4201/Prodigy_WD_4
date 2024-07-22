@@ -1,0 +1,180 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000; /* Set background color to black */
+    color: #fff; /* Set font color to white */
+    scroll-behavior: smooth;
+}
+
+header, section {
+    background: url("https://images.squarespace-cdn.com/content/v1/651de1117f647029db3f22a1/aa4d95bd-e35b-42f1-8e3b-9b24bd7f0616/laptop+2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+header nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+.header-content {
+    max-width: 600px;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.header-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.header-content .highlight {
+    color: #ffd700;
+}
+
+.header-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffd700;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.header-content .btn:hover {
+    background-color: #ffa500;
+}
+
+section {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* Each section takes up at least the full viewport height */
+    color: #fff;
+}
+
+section .content {
+    background: rgba(0, 0, 0, 0.6); /* Add a semi-transparent background to enhance readability */
+    padding: 50px;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about h2, #projects h2, #contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+#about p, #projects p, #contact p {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+/* Container for projects */
+/* Container for projects */
+#projects {
+    display: flex; /* Use Flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line if needed */
+    justify-content: center; /* Center items horizontally */
+    gap: 1.5rem; /* Space between project items */
+    padding: 3rem; /* Padding around the container */
+    background: url("https://images.squarespace-cdn.com/content/v1/651de1117f647029db3f22a1/aa4d95bd7f0616/laptop+2.jpg");
+    background-size: cover; /* Ensure the background covers the container */
+    background-position: center; /* Center the background image */
+}
+
+/* Project item */
+.project {
+    background: rgba(255, 211, 0, 0.7); /* Semi-transparent yellow background */
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    backdrop-filter: blur(8px); /* Blurs the background */
+    -webkit-backdrop-filter: blur(8px); /* For Safari */
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, and flex-basis */
+    max-width: 300px; /* Set a maximum width for the project boxes */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    text-align: center; /* Center text inside the project box */
+    margin: 1rem; /* Margin around each project box */
+}
+
+
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
